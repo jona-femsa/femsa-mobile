@@ -7,6 +7,7 @@ interface InputFieldProps {
     placeholder?: string;
 };
 
+// placeholder se asigna valor default para evitar errores
 export default function InputField({value, placeholder = 'Ingresa datos'}: InputFieldProps ): JSX.Element {
     const [error, setError] = useState<boolean>(false);
     const [type, setType] = useState<string>('');
