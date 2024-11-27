@@ -6,7 +6,7 @@ export default class ProductService {
         private readonly repository: ProductRepository,
     ) {}
 
-    total() {
-        this.repository.getItems().reduce((sum, item) => sum + item.price * item.quantity, 0);
+    total(): number {
+        return this.repository.getItems().reduce((sum, item) => sum + item.price * item.quantity, 0);
     }
 }
