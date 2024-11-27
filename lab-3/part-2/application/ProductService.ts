@@ -1,6 +1,5 @@
 import { ProductRepository } from "../domain";
 
-
 export default class ProductService {
     constructor(
         private readonly repository: ProductRepository,
